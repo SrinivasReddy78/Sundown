@@ -57,6 +57,6 @@ Menu.addEventListener("click",()=>{
 
 //loader code
 let loader = document.querySelector("#loader")
-setTimeout(function() {
-    loader.style.top = "-100%"
+setTimeout(() => {
+    loader.style.top = "-150%"
 }, 4200);
