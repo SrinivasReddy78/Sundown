@@ -1,8 +1,3 @@
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector('#main'),
-//     smooth: true
-// });
-
 // page-3 element code
 
 let ElemContainer = document.querySelector(".element-container")
@@ -57,6 +52,6 @@ Menu.addEventListener("click",()=>{
 
 //loader code
 let loader = document.querySelector("#loader")
-setTimeout(() => {
-    loader.style.top = "-150%"
-}, 4200);
+setTimeout(()=>{
+    loader.style.top = "-100%"
+},4200)
