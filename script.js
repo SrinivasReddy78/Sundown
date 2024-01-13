@@ -35,7 +35,7 @@ let MenuBody = document.querySelector(".menu-body")
 let navImg = document.querySelector("nav img")
 let MenuIcon = document.querySelector("input")
 let flag = 0
-Menu.addEventListener("click",()=>{
+const toogleMennu = ()=>{
     if(flag==0){
         MenuBody.style.top = 0
         navImg.style.opacity = 0
@@ -48,7 +48,9 @@ Menu.addEventListener("click",()=>{
         flag = 0
         MenuIcon.checked = false
     }
-})
+}
+Menu.addEventListener("click",toogleMennu)
+MenuIcon.addEventListener("click",toogleMennu)
 
 //loader code
 let loader = document.querySelector("#loader")
